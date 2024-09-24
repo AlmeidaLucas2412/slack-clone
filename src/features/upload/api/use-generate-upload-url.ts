@@ -6,7 +6,7 @@ import { api } from "../../../../convex/_generated/api"
 type ResponseType = string | null
 
 type Options = {
-  onSuccess: (data: ResponseType) => void
+  onSuccess?: (data: ResponseType) => void
   onError?: (error: Error) => void
   onSettled?: () => void
   throwError?: boolean
